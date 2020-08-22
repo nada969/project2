@@ -1,0 +1,398 @@
+/////////variables
+$primcolor:#9fd7f3;
+$seccolor:#233142;
+$rdcolor:white;
+@mixin name() {
+    text-align: right;
+    justify-content: center;
+    margin: 7vh 0;
+}
+
+/////////////items
+img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+b{
+    font-size: 51px;
+    font-weight: 200;
+    padding: 0 0px 17px 0px;
+}
+
+hr {
+    width: 17vh;
+    margin: 21px auto;
+    background-color: $primcolor;
+    height: 1px;
+}
+
+a.btn {
+    color: $rdcolor;
+    background-color: $seccolor;
+    border: none;
+    width: 38vh;
+    border-radius: 22vh;
+    box-shadow: 0px 0px 5px 3px grey;
+    &:hover , &:active , &:visited{
+        background-color: #1e2228;;
+        color: white;
+    }
+    &:focus{
+        box-shadow: 0px 0px 5px 3px grey;
+    }
+}
+
+h3 {
+    border-right: 5px solid $primcolor;
+    padding-right: 11px;
+    line-height: inherit;
+    font-size: 19px;
+    margin: 8px 8px;
+}
+
+//////////////sections
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav{
+    .image{
+        width: 15%;
+        height: auto;
+    }
+    button.navbar-toggler{
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+footer{
+    background: url(../imgs/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: end;
+    color: $rdcolor;
+    padding: 60px 0;
+    .details{
+        margin: auto;
+        img{
+        width: 36%;
+        }
+    }
+    .icons {
+        font-size: 26px;
+        i {
+            margin: 0 12px;
+            &:hover{
+                cursor: pointer;
+                color: rgb(230, 225, 225);
+            }
+        }
+    }
+    .image {
+        margin: auto;
+        img{
+            width: 45%;
+        }
+    }
+}
+
+////////home page
+header{
+    width: 100%;
+    .row{
+        margin: 0em;
+        .blue{
+            background: url(../imgs/header-side.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            text-align: end;
+            h2{
+                margin-top: 35%;
+                float: right;
+            }
+        }
+      
+    }
+}
+
+.how-we-are {
+    margin: 37px 0;
+    text-align: center;
+    overflow: hidden;
+    .row{
+        margin: 39px 0px;
+        .para{
+            text-align: end;
+            padding: 42px 0px;
+        }
+    }
+}
+
+.we-offer{
+    text-align: center;
+    align-items: center;
+    .we-offer-content{
+        background: url(../imgs/we-offer.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 11vh 0;
+        margin: 9vh 0;
+        .item{
+                .card{
+                width: 18rem;
+                border-radius: 10%;
+                margin: auto;
+                img{
+                    width: 68%;
+                    margin: 18px auto;
+                }
+                h5{
+                    color: $primcolor;
+                    font-weight: 300;
+                }
+            }
+        }
+        .owl-nav{
+            display: block;
+            button{
+                    &:hover{
+                        background: transparent;
+                        color: black;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+            }
+        }
+        .owl-dots{
+            display: none;
+        }
+    }
+}
+
+.our-work{
+    text-align: center;
+    align-items: center;
+    .our-work-content{
+        background: url(../imgs/bg30-Ar1web.gif);
+        background-repeat: repeat;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        padding: 42px 0;
+        margin-top: 10vh;
+        .row{
+            margin: 0;
+            .box{
+                -webkit-box-flex: auto ;
+                -ms-flex: auto;
+                flex: auto;
+                .card{
+                    margin: 21px auto;
+                    border: none;
+                    border-radius: 4vh;
+                    box-shadow: 0px 0px 9px 3px grey;
+                    overflow: hidden;
+                    cursor: pointer;
+                    img{
+                        border-radius: 4vh;
+                        &:hover{
+                            transform: scale(1.05);
+                            cursor: pointer;
+                        }
+                    }
+                    a{
+                        color: black;
+                        &:hover{
+                            text-decoration-line: none;
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.more{
+    text-align: center;
+    margin: 11vh 0;
+    .box{
+        .card{
+            margin: 0px auto 25px auto;
+            border-radius: 5vh;
+            box-shadow: 0px 0px 10px 3px #cdc7c7;
+            &:hover {
+                transform: scale(1.025);
+                cursor: pointer;
+            }
+            img{
+                border-radius: 5vh 5vh 0vh 0;
+            }
+            .card-body {
+                border-radius: 5vh;
+                .view {
+                    display: flex;
+                    .number {
+                        display: flex;
+                        justify-content: end;
+                        font-size: 14px;
+                        p {
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .button {
+                        position: absolute;
+                        right: 11px;
+                        a.btn {
+                            border: none;
+                            width: auto;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.our-clients{
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    .our-client-content{
+        background: url(../imgs/our-client-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 133px 0;
+        .image {
+            width: 65%;
+            margin: auto;
+            &:hover, &:focus{
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
+        .owl-carousel{
+            .owl-nav{
+                display: block;
+                button{
+                        &:hover{
+                            background: transparent;
+                            color: black;
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                }
+            }
+            .owl-dots{
+                display: none;
+            }
+        }
+    }
+}
+
+/////////////our-work page
+.our-work-details{
+    @extend .our-work;
+}
+
+
+//////////application-one page
+.one-app {
+    @include name();
+    .img {
+        text-align: center;
+        .img img {
+            width: 65%;
+        }
+    }
+}
+
+///////app-details page
+.app-details {
+    @include name();
+    .content{
+        background-color:#868686 ;
+        color: white;
+        padding: 28px 9px;
+    }
+}
+
+////////turn page
+.turn{
+    @include name();
+    .card-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 50px 0;
+        .my-card {
+            height: 20rem;
+            width: 12rem;
+            position: relative;
+            z-index: 1;
+            -webkit-transform: scale(0.6) translateY(-2rem);
+            transform: scale(0.6) translateY(-2rem);
+            opacity: 0.6;
+            cursor: pointer;
+            pointer-events: none;
+            transition: 1s;
+            margin: -45px;
+        }
+        .active {
+            z-index: 3;
+            -webkit-transform: scale(1) translateY(0) translateX(0);
+            transform: scale(1) translateY(0) translateX(0);
+            opacity: 1;
+            pointer-events: auto;
+            transition: 1s;
+        }
+    }
+    .card-carousel .my-card.prev, .card-carousel .my-card.next {
+        z-index: 2;
+        -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+        transform: scale(0.8) translateY(-1rem) translateX(0);
+        opacity: 0.6;
+        pointer-events: auto;
+        transition: 1s;
+      }
+}
+
+///////more5 page
+.after-10-years{
+    text-align: right;
+    background: url(../imgs/bg30-Ar1web.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 5vh 0;
+    overflow: hidden;
+    .card{
+        margin: auto;
+        margin-top: 6vh;
+        width: 84%;
+        padding: 28px 0;
+        border-radius: 3vh;
+        box-shadow: 0 0 10px 5px gainsboro;
+        img{
+            width: 69%;
+            margin: auto;
+            border-radius: 7vh;
+            box-shadow: 0 0 10px 5px gainsboro;
+        }
+    }
+}
+
+
